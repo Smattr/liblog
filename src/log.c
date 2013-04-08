@@ -40,7 +40,7 @@ static char *level_to_string[] = {
 };
 
 void log_write(level_t level, char *file, int line, char *format, ...) {
-    if (level > logging_level) {
+    if (level > logging_level || log == NULL) {
         return;
     }
 
@@ -68,4 +68,5 @@ void log_write(level_t level, char *file, int line, char *format, ...) {
 
 void log_close(void) {
     fclose(log);
+    log = NULL;
 }
