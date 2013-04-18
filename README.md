@@ -15,7 +15,7 @@ Call `log_init` on startup, use `LOG` to write a message to the log and
 header. Feel free to ask me if you have questions.
 
 ## Licence
-All files in this repository are covered by a [WTFPL](http://www.wtfpl.net/)
-licence.
+All files in this repository are in the public domain. Do whatever you like
+with them.
 
 \* No habla Español.
